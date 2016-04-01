@@ -1,0 +1,12 @@
+{ "questions": [{
+    "query": "What is Snapchat?",
+    "author": "Jane Doe",
+    "notes": "I hear a lot about it but I don't know what it is.",
+    "answers": [{}]
+  }, {
+    "query": "What is Bitcoin?",
+    "author": "Joe Smith",
+    "notes": "Are they just tiny bits of coins?",
+    "answers": [{}]
+  }]
+}
