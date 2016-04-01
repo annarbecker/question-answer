@@ -1,1 +1,6 @@
-{{outlet}}
+<h1 class="pageHeader">Q &amp; A </h1>
+<hr>
+{{#each model as |question|}}
+    {{question-preview question=question}}
+  <hr>
+{{/each}}
