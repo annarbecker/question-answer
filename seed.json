@@ -2,11 +2,17 @@
     "query": "What is Snapchat?",
     "author": "Jane Doe",
     "notes": "I hear a lot about it but I don't know what it is.",
-    "answers": [{}]
+    "answers": [{
+      "author": "Tim Tom",
+      "response": "Snapchat is a photo- and video-messaging app. It launched in 2011. Snapchat is unique in that all photos and videos only last a brief amount of time before they disappear forever, making the app ephemeral in nature, though you can take a screenshot of snaps to save them in picture form. As of May 2014, the app's users were sending 700 million snaps a day. Due to the instant popularity of Snapchat, Facebook reportedly offered to acquire Snapchat for $3 billion. One of the app's cofounders declined the cash offer however. Facebook later launched a similar app (Slingshot), which failed."
+      }]
   }, {
     "query": "What is Bitcoin?",
     "author": "Joe Smith",
     "notes": "Are they just tiny bits of coins?",
-    "answers": [{}]
+    "answers": [{
+      "author": "Melissa Money",
+      "response": "Bitcoin is a form of digital currency, created and held electronically. No one controls it. Bitcoins aren’t printed, like dollars or euros – they’re produced by people, and increasingly businesses, running computers all around the world, using software that solves mathematical problems. It’s the first example of a growing category of money known as cryptocurrency."
+      }]
   }]
 }
