@@ -1,0 +1,11 @@
+{{#if updateQuestionForm}}
+<h4 class="subHeader">edit question</h4>
+<div class="form">
+  {{textarea class="form-control" value=question.query id="query"}}
+  {{input class="form-control" value=question.author id="author"}}
+  {{textarea class="form-control" value=question.notes id="notes"}}
+  <button class="btn btn-default addBtn" {{action 'update' question}}>&#9998; Save Edit</button>
+</div>
+{{else}}
+<button class="btn btn-default editBtn btn-sm" {{action 'updateQuestionForm'}}>&#9998; Edit</button>
+{{/if}}
