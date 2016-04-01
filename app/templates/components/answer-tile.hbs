@@ -1,5 +1,6 @@
 {{#each question.answers as |answer|}}
-  <h4>{{answer.author}}</h4>
+  <h2 class="queryHeader">A:</h2>
+  <h4><strong>{{answer.author}}</strong></h4>
   <p>{{answer.response}}</p>
   <button class="btn btn-default btn-sm" {{action 'deleteAnswer' answer}}>&CircleTimes; Delete</button>
   <hr>
