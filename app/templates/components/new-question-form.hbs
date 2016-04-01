@@ -1,0 +1,8 @@
+<h3 class="subHeader">NEW QUESTION</h3>
+<hr>
+<div class="form">
+  {{input class="form-control" value=author id="author" placeholder="Your Name"}}
+  {{textarea class="form-control" value=query id="query" placeholder="Question"}}
+  {{textarea class="form-control" value=notes id="notes" placeholder="Additional Notes"}}
+  <button class="btn btn-default addBtn" {{action 'save'}}>&#10141;  Add</button>
+</div>
