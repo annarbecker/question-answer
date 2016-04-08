@@ -1,5 +1,5 @@
 <h2 class="queryHeader">Q: {{question.query}}</h2>
-<p id="time">Posted By: {{question.author}} | {{moment-from-now question.timestamp 'MMMM Do YYYY, h:mm a' allow-empty=true}}</p>
+<p id="time">Posted By: {{question.author}}  |  {{moment-from-now question.timestamp 'MMMM Do YYYY, h:mm a' allow-empty=true}} | #{{question.category}}</p>
 <p>{{question.notes}}</p>
 {{#if question.inFavorites}}
   <p id="inFavorites">you have already added this question to your {{#link-to 'favorites'}}favorites{{/link-to}}</p>
