@@ -4,7 +4,7 @@
   <p>{{answer.response}}</p>
   <button class="btn btn-default btn-sm editBtn" {{action 'deleteAnswer' answer}}>&CircleTimes; Delete</button>
   {{update-answer updateAnswer="updateAnswer" answer=answer}}
-  <button class="btn btn-default btn-sm editBtn" {{action 'upVote' answer}}><span class="vote">&#9757;</span> Upvote | {{answer.upVotes}}</button>
-  <button class="btn btn-default btn-sm editBtn" {{action 'downVote' answer}}><span class="vote">&#9759;</span> Downvote | {{answer.downVotes}}</button>
+  <button class="btn btn-default btn-sm editBtn" {{action 'upVote' answer}}>Upvote &#9757; {{answer.upVotes}}</button>
+  <button class="btn btn-default btn-sm editBtn" {{action 'downVote' answer}}>Downvote &#9759; {{answer.downVotes}}</button>
   <hr>
 {{/each}}
