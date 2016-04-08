@@ -7,5 +7,7 @@ export default Ember.Component.extend({
        this.sendAction('deleteAnswer', answer);
      }
     }
-  }
+  },
+  sortBy: ['timestamp:desc'],
+  sortedAnswers: Ember.computed.sort('question.answers', 'sortBy')
 });

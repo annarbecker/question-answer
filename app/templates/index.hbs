@@ -1,5 +1,12 @@
 <h1 class="pageHeader">Q &amp; A </h1>
 <p id="iconKey"><span>&#9744; :  answers needed  |  &#9745;  :  checkout my answers</span></p>
+<div class="categories">
+  <button class="btn btn-default addBtn btn-sm">{{#link-to 'sports'}}sports{{/link-to}}</button>
+  <button class="btn btn-default addBtn btn-sm">{{#link-to 'fashion'}}fashion{{/link-to}}</button>
+  <button class="btn btn-default addBtn btn-sm">{{#link-to 'tech'}}tech{{/link-to}}</button>
+  <button class="btn btn-default addBtn btn-sm">{{#link-to 'news'}}news{{/link-to}}</button>
+  <button class="btn btn-default addBtn btn-sm">{{#link-to 'health'}}health{{/link-to}}</button>
+</div>
 <hr>
 {{#each model as |question|}}
     {{question-preview question=question}}

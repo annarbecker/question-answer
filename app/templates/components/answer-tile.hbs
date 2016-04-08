@@ -1,4 +1,4 @@
-{{#each question.answers as |answer|}}
+{{#each sortedAnswers as |answer|}}
   <h2 class="queryHeader">A:</h2>
   <p id="time">Posted By: {{answer.author}} | {{moment-from-now answer.timestamp 'MMMM Do YYYY, h:mm a' allow-empty=true}}</p>
   <p>{{answer.response}}</p>

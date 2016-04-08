@@ -76,6 +76,10 @@ input, textarea {
   border: #94D1BE;
 }
 
+.addBtn a {
+  color: white;
+}
+
 .editBtn {
   margin: 3px;
 }
@@ -127,4 +131,11 @@ input, textarea {
   font-family: 'Nixie One', cursive;
   color: tomato;
   text-align: center;
+}
+
+.categories {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
 }

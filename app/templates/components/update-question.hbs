@@ -4,6 +4,13 @@
   {{textarea class="form-control" value=question.query id="query"}}
   {{input class="form-control" value=question.author id="author"}}
   {{textarea class="form-control" value=question.notes id="notes"}}
+  {{#x-select value=category class="select"}}
+    {{#x-option value='sports'}}Sports{{/x-option}}
+    {{#x-option value='tech'}}Tech{{/x-option}}
+    {{#x-option value='fashion'}}Fashion{{/x-option}}
+    {{#x-option value='news'}}News{{/x-option}}
+    {{#x-option value='health'}}Health{{/x-option}}
+  {{/x-select}}
   <button class="btn btn-default addBtn" {{action 'update' question}}>&#9998; Save Edit</button>
 </div>
 {{else}}
