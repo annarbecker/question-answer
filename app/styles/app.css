@@ -79,6 +79,10 @@ input, textarea {
 .editBtn {
   margin: 3px;
 }
+#addFav {
+  margin: 3px;
+  color: black;
+}
 
 .subHeader {
   font-family: 'Nixie One', cursive;
@@ -90,4 +94,20 @@ input, textarea {
   padding-bottom: 5px;
   font-weight: bold;
   color: #94D1BE;
+}
+
+#counter{
+  background-color: #94D1BE;
+  color: white;
+  border-radius: 5px;
+  padding-left: 1px;
+  padding-right: 15px;
+}
+
+#favLink {
+  background-color: #94D1BE;
+  color: white;
+  border-radius: 5px;
+  padding-right: 1;
+  padding-left: 15px;
 }
