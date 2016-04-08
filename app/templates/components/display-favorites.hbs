@@ -1,0 +1,12 @@
+{{#if listIsShowing}}
+{{#each favoritesList.questions as |question|}}
+  <p>{{#link-to 'question' question.id}}{{question.query}}{{/link-to}}</p>
+  <button {{action "removeFromFavorites" question}}>Remove From Favorites</button>
+{{/each}}
+  {{total}}
+  <button {{action 'hideList'}}>Hide List</button>
+  <button {{action 'emptyList' questions}}>Empty List</button>
+{{else}}
+  <button {{action 'showList'}}>View List</button>
+  {{total}}
+{{/if}}
