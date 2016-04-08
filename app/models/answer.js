@@ -4,5 +4,7 @@ export default DS.Model.extend({
   author: DS.attr(),
   response: DS.attr(),
   question: DS.belongsTo('question', {async: true}),
-  timestamp: DS.attr()
+  timestamp: DS.attr(),
+  upVotes: DS.attr(),
+  downVotes: DS.attr()
 });

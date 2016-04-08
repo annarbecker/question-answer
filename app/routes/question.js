@@ -41,6 +41,14 @@ export default Ember.Route.extend({
         }
       });
       answer.save();
+    },
+    upVote(answer) {
+      answer.incrementProperty('upVotes');
+      answer.save();
+    },
+    downVote(answer) {
+      answer.incrementProperty('downVotes');
+      answer.save();
     }
   }
 });

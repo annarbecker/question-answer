@@ -9,6 +9,12 @@ export default Ember.Component.extend({
     },
      updateAnswer(answer, params) {
       this.sendAction('updateAnswer', answer, params);
+    },
+    upVote(answer) {
+      this.sendAction('upVote', answer);
+    },
+    downVote(answer) {
+      this.sendAction('downVote', answer);
     }
   },
   sortBy: ['timestamp:desc'],
