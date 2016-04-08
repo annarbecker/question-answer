@@ -1,12 +1,10 @@
 <h2 class="queryHeader">Q: {{question.query}}</h2>
-<h4><strong>{{question.author}}</strong></h4>
-<p>{{moment-from-now question.timestamp 'MMMM Do YYYY, h:mm a' allow-empty=true}}</p>
+<p id="time">Posted By: {{question.author}} | {{moment-from-now question.timestamp 'MMMM Do YYYY, h:mm a' allow-empty=true}}</p>
 <p>{{question.notes}}</p>
-<button class="btn btn-default editBtn btn-sm" {{action 'delete' question}}>&CircleTimes; Delete</button>
 {{#if question.inFavorites}}
-  <br>
-  <p id="inFavorites">You have already added this questions to your favorites!</p>
-{{else}}
-  <br>
+  <p id="inFavorites">you have already added this question to your {{#link-to 'favorites'}}favorites{{/link-to}}</p>
+  {{else}}
   <button class="btn btn-default btn-sm editBtn" {{action 'addToFavorites' question}}>&#10141; Add to Favorites</button>
 {{/if}}
+<br>
+<button class="btn btn-default editBtn btn-sm" {{action 'delete' question}}>&CircleTimes; Delete</button>

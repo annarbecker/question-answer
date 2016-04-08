@@ -107,7 +107,24 @@ input, textarea {
 #favLink {
   background-color: #94D1BE;
   color: white;
-  border-radius: 5px;
   padding-right: 1;
   padding-left: 15px;
+}
+
+#iconKey {
+  font-family: 'Nixie One', cursive;
+  color: #9DB5B2;
+  font-size: 16px;
+  text-align: center;
+}
+
+#time {
+  font-size: 12px;
+  color: #9DB5B2;
+}
+
+#inFavorites {
+  font-family: 'Nixie One', cursive;
+  color: tomato;
+  text-align: center;
 }
