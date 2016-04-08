@@ -4,5 +4,11 @@
   {{input class="form-control" value=author id="author" placeholder="Your Name"}}
   {{textarea class="form-control" value=query id="query" placeholder="Question"}}
   {{textarea class="form-control" value=notes id="notes" placeholder="Additional Notes"}}
+  {{#x-select value=category class="select"}}
+    {{#x-option value='sports'}}Sports{{/x-option}}
+    {{#x-option value='tech'}}Tech{{/x-option}}
+    {{#x-option value='fashion'}}Fashion{{/x-option}}
+    {{#x-option value='news'}}News{{/x-option}}
+  {{/x-select}}
   <button class="btn btn-default addBtn" {{action 'save'}}>&#10141;  Add</button>
 </div>

@@ -6,6 +6,7 @@ export default DS.Model.extend({
   notes: DS.attr(),
   answers: DS.hasMany('answer', {async: true}),
   timestamp: DS.attr(),
+  category: DS.attr(),
 
   favoritesList: Ember.inject.service(),
   inFavorites: Ember.computed('favoritesList.questions.[]', function() {

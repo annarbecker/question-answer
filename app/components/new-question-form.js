@@ -8,7 +8,8 @@ export default Ember.Component.extend({
         query: this.get('query'),
         author: this.get('author'),
         notes: this.get('notes'),
-        timestamp: this.get('timestamp') ? this.get('timestamp') : moment().format('MMMM Do YYYY, h:mm a')
+        timestamp: this.get('timestamp') ? this.get('timestamp') : moment().format('MMMM Do YYYY, h:mm a'),
+        category: this.get('category')
       };
       this.sendAction('save', params);
     }
