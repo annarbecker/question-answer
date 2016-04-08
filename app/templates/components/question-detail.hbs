@@ -3,3 +3,10 @@
 <p>{{moment-from-now question.timestamp 'MMMM Do YYYY, h:mm a' allow-empty=true}}</p>
 <p>{{question.notes}}</p>
 <button class="btn btn-default editBtn btn-sm" {{action 'delete' question}}>&CircleTimes; Delete</button>
+{{#if question.inFavorites}}
+  <br>
+  <h4>You have already added this questions to your favorites!</h4>
+{{else}}
+  <br>
+  <button class="btn btn-default" {{action 'addToFavorites' question}}>Add to Favorites</button>
+{{/if}}
