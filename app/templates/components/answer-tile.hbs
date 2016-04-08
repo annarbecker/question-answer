@@ -2,6 +2,7 @@
   <h2 class="queryHeader">A:</h2>
   <h4><strong>{{answer.author}}</strong></h4>
   <p>{{answer.response}}</p>
+  <p>{{moment-from-now answer.timestamp 'MMMM Do YYYY, h:mm a' allow-empty=true}}</p>
   <button class="btn btn-default btn-sm" {{action 'deleteAnswer' answer}}>&CircleTimes; Delete</button>
   <hr>
 {{/each}}
