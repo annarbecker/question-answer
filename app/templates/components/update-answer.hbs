@@ -1,10 +1,10 @@
 {{#if updateAnswerForm}}
-<h4 class="subHeader">edit answer</h4>
-<div class="form">
-  {{input class="form-control"  id="answerAuthorUpdate" value=answer.author}}
-  {{textarea class="form-control"  id="responseUpdate" value=answer.response}}
-  <button class="btn btn-default formBtn" {{action 'updateAnswer' answer}}>&#9998; Save Edit</button>
-</div>
+  <h4 class="subHeader">edit answer</h4>
+  <div class="form">
+    {{input class="form-control"  id="answerAuthorUpdate" value=answer.author}}
+    {{textarea class="form-control"  id="responseUpdate" value=answer.response}}
+    <button class="btn btn-default formBtn" {{action 'updateAnswer' answer}}>&#9998; Save Edit</button>
+  </div>
 {{else}}
-<button class="btn btn-default editBtn btn-sm" {{action 'updateAnswerForm'}}>&#9998; Edit</button>
+  <button class="btn btn-default editBtn btn-sm" {{action 'updateAnswerForm'}}>&#9998; Edit</button>
 {{/if}}

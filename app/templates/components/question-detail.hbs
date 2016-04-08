@@ -3,7 +3,7 @@
 <p>{{question.notes}}</p>
 {{#if question.inFavorites}}
   <p id="inFavorites">you have already added this question to your {{#link-to 'favorites'}}favorites{{/link-to}}</p>
-  {{else}}
+{{else}}
   <button class="btn btn-default btn-sm editBtn" {{action 'addToFavorites' question}}>&#10141; Add to Favorites</button>
 {{/if}}
 <br>
