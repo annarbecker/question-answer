@@ -14,9 +14,7 @@ export default Ember.Component.extend({
     var listTotal = 0;
     listTotal += this.get('favoritesList.questions.length');
     if(listTotal === 0) {
-      return Ember.String.htmlSafe("<a href='/'>Add Favorites</a>");
-    } else {
-      return Ember.String.htmlSafe("<p>Number of Favorites: " + listTotal + "</p>");
+      return Ember.String.htmlSafe("<hr><button class='btn btn-default editBtn'>&#10141; Add Favorites</button>");
     }
   })
 });

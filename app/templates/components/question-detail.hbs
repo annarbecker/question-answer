@@ -5,8 +5,8 @@
 <button class="btn btn-default editBtn btn-sm" {{action 'delete' question}}>&CircleTimes; Delete</button>
 {{#if question.inFavorites}}
   <br>
-  <h4>You have already added this questions to your favorites!</h4>
+  <p id="inFavorites">You have already added this questions to your favorites!</p>
 {{else}}
   <br>
-  <button class="btn btn-default" {{action 'addToFavorites' question}}>Add to Favorites</button>
+  <button class="btn btn-default btn-sm editBtn" {{action 'addToFavorites' question}}>&#10141; Add to Favorites</button>
 {{/if}}

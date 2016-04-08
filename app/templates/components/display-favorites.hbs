@@ -1,6 +1,7 @@
 {{#each favoritesList.questions as |question|}}
-  <p>{{#link-to 'question' question.id}}{{question.query}}{{/link-to}}</p>
-  <button {{action "removeFromFavorites" question}}>Remove From Favorites</button>
+  <h4 class="queryHeader">{{#link-to 'question' question.id}}{{question.query}}{{/link-to}}</h4>
+  <button class="btn btn-default "{{action "removeFromFavorites" question}}>&CircleTimes; Remove From Favorites</button>
+  <hr>
 {{/each}}
-{{total}}
-<button class="btn btn-default" {{action 'emptyList' questions}}>Empty List</button>
+<button class="btn btn-default editBtn" {{action 'emptyList' questions}}>&CircleTimes; Empty List</button>
+{{#link-to 'index'}}{{total}}{{/link-to}}
