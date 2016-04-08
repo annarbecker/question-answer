@@ -5,5 +5,10 @@ export default DS.Model.extend({
   author: DS.attr(),
   notes: DS.attr(),
   answers: DS.hasMany('answer', {async: true}),
-  timestamp: DS.attr()
+  timestamp: DS.attr(),
+
+  favoritesList: Ember.inject.service(),
+  inList: Ember.computed('favoritesList.questions.[]', function() {
+    return this.get('favoritesList').includes(this);
+  })
 });
