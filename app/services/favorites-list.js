@@ -7,9 +7,9 @@ export default Ember.Service.extend({
     this.get('questions').pushObject(question);
   },
   remove(question) {
-    this.get('questions').removeObject(question)
+    this.get('questions').removeObject(question);
   },
-  includes('question') {
+  includes(question) {
     return this.get('questions').includes(question);
   },
   empty() {
