@@ -1,4 +1,5 @@
 <h2 class="queryHeader">Q: {{question.query}}</h2>
 <h4><strong>{{question.author}}</strong></h4>
+<p>{{moment-from-now question.timestamp 'MMMM Do YYYY, h:mm a' allow-empty=true}}</p>
 <p>{{question.notes}}</p>
 <button class="btn btn-default editBtn btn-sm" {{action 'delete' question}}>&CircleTimes; Delete</button>

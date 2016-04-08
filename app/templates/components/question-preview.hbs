@@ -1,2 +1,3 @@
 <h3 class="queryHeader">{{#link-to 'question' question.id}}{{question.query}}{{/link-to}}</h3>
 <h5>{{question.author}}</h5>
+<p>{{moment-from-now question.timestamp 'MMMM Do YYYY, h:mm a' allow-empty=true}}</p>
