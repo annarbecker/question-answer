@@ -6,12 +6,12 @@
   {{textarea class="form-control" value=question.notes id="notes"}}
   {{#x-select value=category class="select"}}
     {{#x-option value='sports'}}Sports{{/x-option}}
-    {{#x-option value='tech'}}Tech{{/x-option}}
     {{#x-option value='fashion'}}Fashion{{/x-option}}
+    {{#x-option value='tech'}}Tech{{/x-option}}
     {{#x-option value='news'}}News{{/x-option}}
     {{#x-option value='health'}}Health{{/x-option}}
   {{/x-select}}
-  <button class="btn btn-default addBtn" {{action 'update' question}}>&#9998; Save Edit</button>
+  <button class="btn btn-default formBtn" {{action 'update' question}}>&#9998; Save Edit</button>
 </div>
 {{else}}
 <button class="btn btn-default editBtn btn-sm" {{action 'updateQuestionForm'}}>&#9998; Edit</button>

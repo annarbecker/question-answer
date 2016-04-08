@@ -71,13 +71,24 @@ input, textarea {
   transition: all 300ms linear;
 }
 
+.formBtn {
+  width: 100px;
+  margin: 0 auto;
+  background-color: #9DB5B2;
+  border: #9DB5B2;
+  color: white;
+  transition: all 300ms linear;
+  margin-top: 10px;
+}
+
 .addBtn:hover {
   background-color: #94D1BE;
   border: #94D1BE;
 }
 
-.addBtn a {
-  color: white;
+.formBtn:hover {
+  background-color: #94D1BE;
+  border: #94D1BE;
 }
 
 .editBtn {
@@ -134,8 +145,15 @@ input, textarea {
 }
 
 .categories {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.select {
+  border: none;
+  width: 40%;
+  margin: 0 auto;
+  font-size: 12px;
 }
