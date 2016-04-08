@@ -8,7 +8,7 @@ export default DS.Model.extend({
   timestamp: DS.attr(),
 
   favoritesList: Ember.inject.service(),
-  inList: Ember.computed('favoritesList.questions.[]', function() {
+  inFavorites: Ember.computed('favoritesList.questions.[]', function() {
     return this.get('favoritesList').includes(this);
   })
 });
