@@ -5,7 +5,7 @@ export default Ember.Component.extend({
     deleteAnswer(answer) {
       if(confirm('Are you sure you want to remove this answer?')) {
        this.sendAction('deleteAnswer', answer);
-     }
+    }
     },
      updateAnswer(answer, params) {
       this.sendAction('updateAnswer', answer, params);
@@ -17,6 +17,6 @@ export default Ember.Component.extend({
       this.sendAction('downVote', answer);
     }
   },
-  sortBy: ['timestamp:desc'],
+  sortBy: ['timestamp:asc'],
   sortedAnswers: Ember.computed.sort('question.answers', 'sortBy')
 });
