@@ -6,6 +6,9 @@ export default Ember.Component.extend({
       if(confirm('Are you sure you want to remove this answer?')) {
        this.sendAction('deleteAnswer', answer);
      }
+    },
+     updateAnswer(answer, params) {
+      this.sendAction('updateAnswer', answer, params);
     }
   },
   sortBy: ['timestamp:desc'],

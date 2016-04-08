@@ -3,5 +3,6 @@
   <p id="time">Posted By: {{answer.author}} | {{moment-from-now answer.timestamp 'MMMM Do YYYY, h:mm a' allow-empty=true}}</p>
   <p>{{answer.response}}</p>
   <button class="btn btn-default btn-sm" {{action 'deleteAnswer' answer}}>&CircleTimes; Delete</button>
+  {{update-answer updateAnswer="updateAnswer" answer=answer}}
   <hr>
 {{/each}}
